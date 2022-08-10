@@ -1,7 +1,7 @@
-import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speechRecognition
+import pyttsx3 
+import speech_recognition as sr 
 import datetime
-import wikipedia #pip install wikipedia
+import wikipedia 
 import webbrowser
 import os
 import smtplib
@@ -97,13 +97,13 @@ if __name__ == "__main__":
         #     codePath = "C:\Users\GHANSHYAM SINGH\Desktop\Visual Studio Code.lnk" 
         #     os.startfile(codePath)
 
-        elif 'email to harry' in query:
+        elif 'email to ghanshyam' in query:
             try:
-                speak("What should I say?")
+                speak("What should I write?")
                 content = takeCommand()
-                to = "harryyourEmail@gmail.com"    
+                to = "ghanshyamyourEmail@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")    
+                speak("Sorry my friend ghanshyam bhai. I am not able to send this email")    
